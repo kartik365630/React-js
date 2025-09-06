@@ -1,0 +1,58 @@
+/* Container */
+.kt {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background: #f4f6f9;
+}
+
+/* Product Card */
+.tp {
+  background: linear-gradient(135deg, #000000 0%, #4e7d69 100%);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Image */
+.tp img {
+  max-height: 120px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Product Title */
+.tp h1 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 8px 0;
+  line-height: 1.4;
+  color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  /* max 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Price */
+.tp h1:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: auto;  /* neeche shift karega */
+  color: #ffeb3b;
+}
+
+/* Hover Effect */
+.tp:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
